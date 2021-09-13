@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do you love me?</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body" onload="checkload()">
+  <img src="./arEmoji_1.jpg" class="arEmoji">
+  <h1>Em có yêu anh hong?</h1>
+  <div>
+    <button class="button button--confirm" onclick="handleConfirmBtn()">Có <i class="fas fa-heart"></i></button>
+    <button class="button button--cancel" onclick="handleCancelBtn()" onmouseover="handleCancelBtn()">Không <i class="fas fa-heart-broken"></i></button>
+  </div>
+  <div class="dialog__overplay">
+    <div class="dialog__modal">
+      <i class="dialog__icon fas fa-heart"></i>
+      <h3 class="dialog__title">Ok!</h3>
+      <p class="dialog__text">=))</p>
+      <button class="dialog__button" onclick="hideDialog()">Đóng</button>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
