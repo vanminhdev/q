@@ -47,3 +47,22 @@ const handleConfirmBtn = () => {
 
 // Hide dialog
 const hideDialog = () => dialog.style.display = 'none';
+
+const deviceType = () => {
+  const ua = navigator.userAgent;
+  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+      return "tablet";
+  }
+  else if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+      return "mobile";
+  }
+  return "desktop";
+};
+
+const checkload = () => {
+  const type = deviceType();
+  if (type !== "desktop") {
+    const body = document.getElementById('body');
+    body.innerHTML = "<div class='text-justify'><h1>Trang chỉ chạy trên máy tính 😁</h1></div>";
+  }
+};
