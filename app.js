@@ -63,6 +63,6 @@ const checkload = () => {
   const type = deviceType();
   if (type !== "desktop") {
     const body = document.getElementById('body');
-    body.innerHTML = "<div><p class='text-justify'>Trang chỉ chạy trên máy tính 😁</p></div>";
+    body.innerHTML = "<div><p class='text-center'>Trang chỉ chạy trên máy tính 😁</p></div>";
   }
 };
